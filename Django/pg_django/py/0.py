@@ -6,18 +6,18 @@ from configobj import ConfigObj
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 # Database configuration file location
-db_config_file = 'f{BASE_DIR}/{db.conf}'
+DB_CONF_FILE = f'{BASE_DIR}/my_project/db.conf'
 
 # Read the configurations from file
-db_config = ConfigObj(db_config_file)
+DB_CONFIG = ConfigObj(DB_CONF_FILE)
 
 # Database connection parameters
 
-DB_HOST = db_config['DB_HOST']
-DB_NAME = db_config['DB_NAME']
-DB_USER = db_config['DB_USER']
-DB_PASSWORD = db_config['DB_PASSWORD']
-DB_PORT = db_config['DB_PORT']
+DB_HOST = DB_CONFIG['DB_HOST']
+DB_NAME = DB_CONFIG['DB_NAME']
+DB_USER = DB_CONFIG['DB_USER']
+DB_PASSWORD = DB_CONFIG['DB_PASSWORD']
+DB_PORT = DB_CONFIG['DB_PORT']
 
 DATABASES = {
              'default': {

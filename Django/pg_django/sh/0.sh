@@ -10,7 +10,7 @@ django-admin startproject my_project
 
 mv my_project src
 
-cat < src/my_project/db.conf
+cat << EOF > src/my_project/db.conf
 DB_HOST = 'localhost'
 DB_NAME = 'db_test'
 DB_USER = 'user_test'
