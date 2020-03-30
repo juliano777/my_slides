@@ -18,4 +18,4 @@ CREATE TABLE ns_hr.tb_person(
     surname text not null
 );
 
-SELECT id, name, surname FROM ns_hr.tb_person;
+SELECT id_, name, surname FROM ns_hr.tb_person;

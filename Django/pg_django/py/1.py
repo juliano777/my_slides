@@ -14,8 +14,6 @@ INSTALLED_APPS = [
 
 from human_resource.models.hr import Person
 
-from human_resource.models.hr import Person
-
 p = Person(name='Ludwig', surname='van Beethoven')
 
 print(p)
