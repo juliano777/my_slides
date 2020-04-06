@@ -11,7 +11,7 @@ class Person(Model):
     Table: tb_person
     '''
 
-    id_ = AutoField(db_column='id_', name='id_', primary_key=True,)
+    id_ = AutoField(db_column='id_', name='id', primary_key=True,)
     name = TextField(db_column='name', name='name',)
     surname = TextField(db_column='surname', name='surname',)
 
