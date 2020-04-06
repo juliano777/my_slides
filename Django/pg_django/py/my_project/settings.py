@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Custom Apps
-    'human_resource',
+    # 'human_resource',
 ]
 
 MIDDLEWARE = [
