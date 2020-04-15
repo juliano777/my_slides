@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'my_project.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 # Database configuration file location
-db_config_file = '{}/{}'.format(BASE_DIR, 'my_project/db.conf')
+db_config_file = f'{BASE_DIR}/my_project/db.conf'
 
 # Read the configurations from file
 db_config = ConfigObj(db_config_file)
